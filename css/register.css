@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 4vh 2vw;
+    background-color: rgba(7, 97, 109, 0.473);
+    font-size: 1.3em;
+}
+
+#message {
+    padding: 20px;
+}
+
+.input-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.side-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-form > label, .right-form > label {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 10px 0px;
+}
+.left-form > label * {
+    width: 200px;
+}
+
+.required span::after {
+    content: "*";
+    color: rgba(255, 0, 0, 0.445);
+}
+
+#payment-modes {
+    display: flex;
+    justify-content: space-between;
+}
+
+#payment-mode-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+aside > a {
+    margin-bottom: 20px;
+}
+
+form {
+    display: block;
+}
+
+.submit-form {
+    background-color:rgba(114, 124, 124, 0.5);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.submit-form > input {
+    font-size: 1em;
+    background-color: rgba(8, 85, 90, 0.63);
+    color: white;
+    margin-top: 10px;
+}

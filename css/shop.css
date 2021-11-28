@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Dancing+Script&display=swap');
+/* @import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css'); */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  text-decoration: none;
+  background-color:white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 10%;
+  background-color:white;
+  color:rgb(141, 243, 243);
+  font-family: 'Comic Neue', cursive;
+}
+nav {
+  position: sticky;
+  top: 0;
+}
+
+
+header li {
+  display: inline-block;
+  list-style-type: none;
+
+  padding: 0 20px;
+  background-color: rgb(141, 243, 243);
+}
+
+button {
+  padding: 9px 25px;
+  background-color:rgb(141, 243, 243);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+
+button:hover {
+  padding: 9px 30px;
+  background-color:rgb(20, 250, 250);
+  
+}
+
+section > h2 {
+  color: gold;
+  text-align: center;
+  font: 3em italic Georgia, Monospace;
+}
+.new-products {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-family: 'Dancing Script', cursive;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid yellow;
+  width: 20%;
+}
+.product-name, .product-price {
+  text-align: center;
+  margin: 0;
+}
+/* 
+.product-photo {
+  position: relative;
+} */
+.product-photo img{
+  /* object-fit: contain; */
+  width: 80%;
+  padding-left: 20%;
+  /* height: 100%; */
+  overflow: hidden;
+  transition: all 0.4s ease 0s;
+}
+
+.product-photo img:hover {
+  width: 100%;
+  padding-left: 0%;
+  /* opacity: 0.9; */
+  overflow: hidden;
+}
+
+#middle-section {
+  display: flex;
+  border: 2px solid red;
+  text-align: center;
+}
+#middle-section > .category-cards {
+  flex-grow: 2;
+}
+#middle-section > aside {
+  flex-grow: 1;
+}
+.category-cards {
+  border: 1px solid green;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "11 12 12 14"
+    "21 22 23 24"
+    "31 32 32 34"
+    ;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.category-card {
+  color: black;
+  font: 300;
+  border: 1px dashed tomato;
+  padding: 6vw 2vh;
+  background-color: aquamarine;
+}
+
+.category-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+}
+.category-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.contact-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#message p {
+    padding: 2px 50px;
+}
+
+footer img {
+    width: 100px;
+    height: 50px;
+}
