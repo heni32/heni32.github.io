@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Workshop registration</title>
+</head>
+<body>
+  <form action="/action_page.php" method="post">
+    <header>
+        <span>Workshop registration</span>
+        <select name="actions" id="actions">
+          <option value="More actions">More actions</option>
+          <option value="Login">Login</option>
+          <option value="Register">Register</option>
+          <option value="Logout">Logout</option>
+        </select>
+    </header>
+    <div id="message"><a href="#">Register now while seats are available!</a></div>
+    <div class="input-form">
+      <aside class="left-form side-form">
+        <label class="required" for="first-name"> <span>First Name </span> <input type="text" id="first-name" required></label>
+        <label class="required" for="last-name"> <span>Last Name</span> <input type="text" id="last-name" required></label>        
+        <label class="required" for="company"> <span>Company - Institution </span> <input type="text" id="company" required></label>
+        <label class="required" class="address-area"><span>Address</span> <textarea rows="6" required></textarea></label>
+        <label for="city"> <span>City</span> <input type="text" id="city"></label>
+        <label for="state"> <span>State</span> 
+          <select name="state" id="state">
+            <option value="none">--Select--</option>
+            <option value="IA">Iowa</option>
+            <option value="NY">New York</option>
+          </select>
+        </label>
+        <label for="country"> <span>Country</span> 
+          <select name="country" id="country">
+            <option value="none">--Select--</option>
+            <option value="US">United States of America</option>
+            <option value="CA">Canada</option>
+          </select>
+        </label>
+        <label class="required" for="email"> <span>Email </span> <input type="email" id="email" required></label>        
+        <label class="required" for="phone"> <span>Phone </span> <input type="text" id="phone" required></label>
+      </aside>
+      <aside class="right-form side-form">
+        <a href="#">Lunch</a>
+        <label for="meal-preference"><span>Meal Preference</span> 
+          <select name="country" id="country">
+            <option value="none">Vegeterian</option>
+            <option value="US">Vegan</option>
+            <option value="CA">Cannibal</option>
+          </select>
+        </label>
+        <a href="#">Payment details</a>
+        <div id="payment-modes">
+          <span>Payment Mode</span>
+          <div id="payment-mode-checkbox">
+            <label for="cash"><input type="checkbox" name="cash" id="cash"><span> Cash</span></label>
+            <label for="cheque"><input type="checkbox" name="cheque" id="cheque"><span> Cheque</span></label>
+            <label for="demand-draft"><input type="checkbox" name="demand-draft" id="demand-draft"><span> Demand draft</span></label>
+        </div>
+        </div>
+        <label for="cheque-no"> <span>DD/Cheque No.</span> <input type="text" id="cheque-no"></label>
+        <label for="bank-name"> <span>Drawn On (Bank Name)</span> <input type="text" id="bank-name"></label>
+        <label for="payable-at"> <span>Payable at</span> <input type="text" id="payable-at"></label>
+      </aside>
+    </div>
+    <div class="submit-form">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>

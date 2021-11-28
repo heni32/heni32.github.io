@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
 }
-
 header {
-    padding: 4vh 2vw;
+    padding: 3vh 2vw;
     background-color: rgba(7, 97, 109, 0.473);
     font-size: 1.3em;
 }
+
 
 #message {
     padding: 20px;
